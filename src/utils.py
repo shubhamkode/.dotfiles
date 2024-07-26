@@ -32,6 +32,7 @@ def install_apt_packages(packages:list[str]):
     command = ["sudo","apt","install"]
     command.extend(packages)
     command.append("-y")
+    sys_call(command)
 
 
 
