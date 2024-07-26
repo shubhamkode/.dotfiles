@@ -4,6 +4,7 @@
     "classic": ["code"]
   },
   "apt": [
+    "stow",
     "git",
     "curl",
     "dex",

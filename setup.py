@@ -14,8 +14,8 @@ def update_system():
 
 def install():
     packages = utils.read_json(PACKAGES)
+    utils.install_apt_packages(packages["apt"])
     utils.install_snap_packages(packages["snap"])
-    # utils.install_apt_packages(packages["apt"])
 
 
 def stow_config():
