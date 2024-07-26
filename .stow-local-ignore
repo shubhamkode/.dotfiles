@@ -1,7 +1,0 @@
-.git
-src
-setup.py
-setup.sh
-packages.json
-^/README.*
-
