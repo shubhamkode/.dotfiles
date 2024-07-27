@@ -179,8 +179,8 @@ bindsym $mod+r mode "resize"
 bar {
 	font pango:Victor Mono Medium 10
 	tray_output none
-        status_command ~/.local/bin/bumblebee-status \
-	-m  title date time layout \
+        status_command /usr/bin/bumblebee-status \
+	-m  title date time pasink layout \
 	-p  time.format="%H:%M" date.format="%a, %b %d %Y" \
 	-t solarized-powerline
 
@@ -193,7 +193,7 @@ exec "setxkbmap -layout 'us' -variant 'dvorak'"
 
 ## Wallpaper
 # exec_always feh --bg-fill ~/Downloads/wallpaper.jpeg
-exec_always --no-startup-id /home/$USER/.config/i3/scripts/setbg &
+exec --no-startup-id /home/$USER/.config/i3/scripts/setbg & 
 
 ## LockScreen
 bindsym $mod+Shift+x exec /home/$USER/.config/i3/scripts/lock
